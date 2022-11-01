@@ -1,0 +1,23 @@
+<div id="container">
+  <img
+    src="https://source.unsplash.com/random/?product/"
+    alt="product"
+    id="product-img"
+  />
+
+  <!-- Formas de passar valores para componentes (data binding)-->
+  <div id="buttons">
+    <!-- property binding -->
+    <w4d-button [label]="buttonLabelCar"></w4d-button>
+    <w4d-button [label]="'Comentar'"></w4d-button>
+
+    <!-- interpolação -->
+    <w4d-button label="Comprar"></w4d-button>
+    <w4d-button label="{{ buttonLabelFav }}"></w4d-button>
+  </div>
+
+  <!-- two way data binding -->
+  <div id="entry-data">
+    <app-entry-data></app-entry-data>
+  </div>
+</div>
